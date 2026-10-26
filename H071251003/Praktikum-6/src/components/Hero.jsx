@@ -1,7 +1,3 @@
-import test from "../assets/test.png";
-import dummy from "../assets/Dummy.png";
-import profile from "../assets/Profile.jpg"
-
 const Hero = () => {
   const handleButtonClick = () => {
     console.log("Welcome to my art space! Let's create together.");
@@ -10,7 +6,6 @@ const Hero = () => {
   return (
     <section className="bg-[#FFF4E0] border-b-4 border-black px-6 py-16 sm:py-24">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Left Side: Text Details */}
         <div className="flex flex-col items-start gap-4">
           <span className="bg-[#00E5FF] border-2 border-black font-extrabold px-3 py-1 uppercase text-xs tracking-widest shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
             Digital Illustrator & Concept Artist
@@ -32,14 +27,14 @@ const Hero = () => {
         <div className="relative flex justify-center items-center min-h-320px sm:min-h-400px">
           <div className="w-64 h-80 sm:w-80 sm:h-96 border-4 border-black bg-[#23A6F0] p-2 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] rotate-2deg">
             <img
-              src={profile}
+              src= "/Profile.jpg"
               alt="Profile"
               className="w-full h-full object-cover border-2 border-black"
             />
           </div>
           <div className="absolute bottom-0 right-4 sm:right-0 w-45 sm:w-60 rotate-6deg hover:-rotate-3 hover:-translate-x-2 transition-transform">
             <img
-              src={dummy}
+              src= "/Dummy.png"
               alt="Artwork preview"
               className="w-full h-full object-contain"
             />
